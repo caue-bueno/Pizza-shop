@@ -8,7 +8,7 @@ export interface GetOrderDetailsResponse {
   id: string
   createdAt: string
   status: 'pending' | 'canceled' | 'processing' | 'delivering' | 'delivered'
-  totalInCents: number
+  totalInCents?: number
   customer: {
     name: string
     email: string
